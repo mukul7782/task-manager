@@ -13,6 +13,7 @@ app.use(cors());
 
 app.use('/api/auth', require('./routes/authRoutes'));
 
+app.use('/api/tasks', require('./routes/taskRoutes'));
 // Placeholder — routes come later
 app.get('/', (req, res) => res.json({ message: 'API running' }));
 
